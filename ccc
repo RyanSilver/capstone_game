@@ -1,0 +1,15 @@
+javac U.java
+javac Comm.java
+javac RunJob.java
+javac transactions.java
+javac CubbyHole.java
+javac dirs.java
+javac mapConns.java
+javac playerNode.java
+javac playerA.java
+javac playerRAN.java
+javac Game.java
+javac RDB.java
+javac rMap.java
+javac terrNames.java
+javac tRisk.java
