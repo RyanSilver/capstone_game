@@ -14,12 +14,15 @@ public class playerWeb extends Thread{
   private DataInputStream in;
   private DataOutputStream out;
   private boolean mode=false;//server mode
+  private DBConn dbconn;
   public playerWeb(CubbyHole a , CubbyHole b, Socket c)
   {
     super();
     rec = a;
     send = b;
     server=c;
+    dbconn = new DBConn();
+    dbconn.createNewGame("temp_user");
     start();
   }
   public playerWeb(CubbyHole a , CubbyHole b, Socket c, boolean d)
@@ -29,6 +32,8 @@ public class playerWeb extends Thread{
     send = b;
     server=c;
     mode=d;
+    dbconn = new DBConn();
+    dbconn.createNewGame("temp_user");
     start();
   }
 
@@ -53,6 +58,11 @@ public class playerWeb extends Thread{
 
         }else{
           String sss = rec.get();
+          String[] tok = sss.split(" ");
+          if(tok[1].toUpperCase().equals("MAP_UPDATE")){
+            //this is an update to the map so we log in in the games history
+            dbconn.updateHistory(sss);
+          }
           out.writeUTF(sss);
           String msg =in.readUTF();
           if (msg.equals(""))msg=null;

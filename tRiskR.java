@@ -138,7 +138,7 @@ public class tRiskR
       game.attack(AttTerr, DefTerr);
 
 //Movement
-      game.movement(AttTerr, DefTerr);
+      //game.movement(AttTerr, DefTerr);
 
       game.message("( MESSAGE STATUS RED(" +
                  game.countP0Territories()  + ":" +

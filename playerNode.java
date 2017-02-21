@@ -17,7 +17,7 @@ public class playerNode
 //  {
 //  }
 //  public playerNode(String lang, String a, Object b, CubbyHole c, CubbyHole d, String e)
-  public playerNode(boolean d, String lang, String b, CubbyHole from, CubbyHole to)
+  public playerNode(boolean d, String lang, String b, CubbyHole to, CubbyHole from)
   {
     DEBUG = d;
     if (System.getProperty("os.name").equals("Linux")){

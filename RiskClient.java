@@ -9,11 +9,10 @@ public class RiskClient{
       Socket client = new Socket(serverName,port);
       CubbyHole webSend=new CubbyHole();//send to player
       CubbyHole webRecv=new CubbyHole();//receive from player
-      playerWeb player=new playerWeb(webRecv,webSend,client,true); //playerWeb( webSend,  webRecv, client);
-      playerRAN ran= new playerRAN(webSend,webRecv);
-      client.close();
-    }catch (Exception e ){
+      playerClient player= new playerClient(client);
 
+    }catch (Exception e ){
+      //client.close();
     }
   }
 }

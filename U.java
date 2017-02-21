@@ -4,10 +4,12 @@ public class U
   public static void pr(String s)  { System.out.print(s); }
   public static void rAssert(boolean b, String err)
   {
-    if (!b) { pr("\n\n***ERROR*** " + err + "\n"); System.exit(0); }
+    if (!b) { pr("\n\n***ERROR*** " + err + "\n");
+    //System.exit(0);
+  }
   }
   public static void delay(int secs)
   {
-    try {Thread.sleep(secs * 1000); } catch(Exception e) {} 
+    try {Thread.sleep(secs * 1000); } catch(Exception e) {}
   }
 }
