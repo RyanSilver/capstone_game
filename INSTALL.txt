@@ -1,0 +1,30 @@
+Installation
+	Database Setup
+		The database should be contained in a file called games.db. You can set up exactly what you want to name this file with another file called gameDbLocation.CFG where you can edit paths to the file. 
+		
+		The database should contain a total of 3 tables schemas are as follows:
+		
+		CREATE TABLE `user` (
+			`id`	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+			`first`	VARCHAR(255) NOT NULL,
+			`last`	VARCHAR(255) NOT NULL,
+			`username`	VARCHAR(255) NOT NULL,
+			`password`	VARCHAR(255) NOT NULL,
+			`email`	VARCHAR(255) NOT NULL,
+			`usertype`	INTEGER NOT NULL DEFAULT 0
+);
+CREATE TABLE ‘games_history’(
+	‘game_number’ int(11) NOT NULL,
+	‘update_number’ int(11) NOT NULL,
+‘update_contents’ varchar(300) NOT NULL 
+);
+CREATE TABLE ‘games_tracker’(
+	‘user_id’ int(11) NOT NULL,
+‘game_number’ integer primary key AUTOINCREMENT not null 
+);
+
+
+	File setup  
+		To install the software simply move the CSGServer.jar file to any folder. This folder must contain 2 separate files as well. The filenames should be gameDbLocation.CFG if the game is located externally or named differently the path to that database file should be in gameDbLocation.CFG as the first line there should be no extra lines in this file.
+
+		After file setup is complete simply run the CSGServer.jar file and the server will be running

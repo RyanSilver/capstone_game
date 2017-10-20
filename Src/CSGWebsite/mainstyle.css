@@ -1,0 +1,136 @@
+body {
+    background-color: #F8F8F6;
+}
+
+hr {
+    border: none;
+    border-top: 1px dotted black;
+}
+
+h1 {
+    margin-left: 370px;
+    font-family: Impact, Charcoal, sans-serif
+}
+
+.accountLabel {
+    float-right;
+    color: #e06c75;
+}
+
+.equalslabel {
+    float-right;
+    color: #FFFFFF;
+}
+
+.actualValues {
+    float-right;
+    color: #94c372;
+}
+
+.semiColon {
+    float-left;
+    color: #FFFFFF;
+}
+
+.ib {
+    background-color: #F8F8F6;
+}
+
+.loginlink {
+    color: #d3d3d3;
+}
+
+.serversideError {
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #991f00;
+    color: #991f00;
+    width: 100%;
+    text-align: center;
+}
+
+.gamebutton {
+    width: 100%;
+    height: 100%;
+}
+
+.movingleft {
+    padding: 20px;
+}
+
+#accountbutton {
+    margin-left: 10px;
+    background-color: #e5c07b;
+    color: #282c34;
+}
+
+#indexText {
+    margin: 0 auto;
+}
+
+#login-background {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+}
+
+#form-background {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#submit {
+    width: 100%;
+}
+
+#brand-image {
+    height: 120%;
+}
+
+#loginform {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#accountbg {
+    background-color: #282c34;
+}
+
+#signupform {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#notamember {
+    padding-left: 2%;
+}
+
+#Homepagetext {
+    margin: 0 auto;
+}
+
+#RANcode {
+    padding-right: 20px;
+    float: left;
+}
+
+#dropdown {
+    background-color: #d9534f;
+}
